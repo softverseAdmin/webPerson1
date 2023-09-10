@@ -1,0 +1,67 @@
+/* Define the background-shine animation */
+@keyframes background-shine {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
+  }
+  
+  /* Apply the animation to an element with a class */
+  .background-shine-animation {
+    animation: background-shine 2s linear infinite;
+  }
+  
+  /* ButtonBackgroundShine.css */
+
+/* Modal container styles */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; /* Ensure the modal is on top of other content */
+  color: black;
+}
+
+.modal {
+  display: flex;
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#FFAFBD, #ED4264);
+  z-index: 2; /* Ensure it's on top of other content */
+  opacity: 0,5; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Allow interactions only when visible */
+}
+
+/* Close button styles */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Modal content styles */
+.modal-content {
+  text-align: center;
+  width: 100%;
+  color: white;
+}
