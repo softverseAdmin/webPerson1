@@ -20,8 +20,8 @@ export default function Contact() {
     { value: '2', label: 'KR-KRN' }
   ]
   return (<>
-    <Container fluid className="d-flex align-items-center justify-content-center" style={{ height: '100vh', margin: 'auto' }}>
-      <Row className='w-75 h-50 overflow-scroll z-index-2'>
+    <Container fluid className="d-flex" style={{margin: 'auto', textAlign: 'left' }}>
+      <Row className='h-50 overflow-scroll z-index-2'>
           <Form>
             <Form.Group controlId="firstName">
               <Form.Label>First Name</Form.Label>
